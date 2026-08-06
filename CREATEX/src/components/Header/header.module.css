@@ -1,0 +1,57 @@
+header {
+  position: absolute;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0px;
+
+  > ul {
+    display: flex;
+    gap: 40px;
+
+    > li {
+      list-style: none;
+
+      > a {
+        font-size: 16px;
+        font-weight: 700;
+        text-decoration: none;
+        color: #424551;
+      }
+    }
+  }
+}
+
+.contactHead {
+  display: flex;
+  gap: 36px;
+
+  > div {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    > img {
+      max-width: 40px;
+    }
+
+    > div {
+      text-align: start;
+
+      > p {
+        font-size: 14px;
+        font-weight: 700;
+        color: #424551;
+      }
+
+      > a {
+        text-decoration: none;
+        font-size: 18px;
+        color: #1e212c;
+      }
+    }
+  }
+}
