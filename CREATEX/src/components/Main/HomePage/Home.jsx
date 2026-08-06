@@ -7,7 +7,6 @@ import OurValues from "./OurValues/OurValues";
 import Partners from "./Partners/Partners";
 
 import Header from "../../Header/Header";
-import ContactForm from "../../ContactForm/ContactForm";
 import Footer from "../../Footer/Footer";
 
 const Home = () => {
@@ -20,7 +19,6 @@ const Home = () => {
       <Partners />
       <Figures />
       <News />
-      <ContactForm />
       
     </>
   );

@@ -5,7 +5,6 @@ import Points from "./Points/Points";
 import Pricing from "./Pricing/Pricing";
 import ServiceHome from "./ServiceHome/ServiceHome";
 import SupportedPr from "./SupportedPr/SupportedPr";
-import ContactForm from "../../ContactForm/ContactForm";
 
 const Service = () => {
   return (
@@ -17,7 +16,6 @@ const Service = () => {
       <Pricing />
       <OurProjects />
       <SupportedPr />
-      <ContactForm />
     </>
   );
 };
