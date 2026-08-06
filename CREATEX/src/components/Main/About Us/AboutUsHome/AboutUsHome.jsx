@@ -20,7 +20,6 @@ const AboutUsHome = () => {
       <OurPartners />
       <OurTeam />
       <MapWork />
-      <Contact />
       <ContactForm />
     </>
   );
