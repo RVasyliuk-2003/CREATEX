@@ -1,0 +1,17 @@
+:global(.container) {
+  max-width: 1230px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+:global(.containerForImgBacground) {
+  max-width: 1920px;
+  width: 100%;
+  margin: 0 auto;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* className={`containerForImgBacground ${style.heroBg}`} */

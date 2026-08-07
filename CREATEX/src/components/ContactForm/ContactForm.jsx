@@ -1,5 +1,5 @@
 import style from "./contactForm.module.css";
-import "./../../App.css";
+
 
 const ContactForm = () => {
   return (
