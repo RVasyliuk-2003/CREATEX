@@ -1,0 +1,110 @@
+.heroBg {
+  background-image: url("./images/bgImage.jpg");
+
+  padding: 220px 15px 120px 15px;
+  box-sizing: border-box;
+
+  position: relative;
+}
+
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+  > h1 {
+    font-size: 72px;
+    font-weight: 700;
+    line-height: 130%;
+    letter-spacing: 1px;
+    color: white;
+
+    > span {
+      color: #ff5a30;
+    }
+  }
+
+  > p {
+    font-size: 20px;
+    color: rgb(223, 221, 221);
+    line-height: 150%;
+  }
+}
+
+.btnBox {
+  margin-top: 37px;
+  display: flex;
+  gap: 24px;
+
+  > button {
+    height: 52px;
+    border-radius: 4px;
+    color: white;
+    width: 100%;
+
+    font-size: 16px;
+    font-weight: 700;
+  }
+}
+
+.btnLEARN {
+  max-width: 278px;
+  background: none;
+  border: 1px solid white;
+}
+
+.btnSUBMIT {
+  max-width: 224px;
+  background-color: #ff5a30;
+  border: none;
+}
+
+.switchContainer {
+  margin-top: 180px;
+  display: flex;
+  gap: 4px;
+}
+
+.switch {
+  display: flex;
+  align-items: end;
+  background: none;
+  max-width: 178px;
+  width: 100%;
+  height: 54px;
+  border-bottom: 1px solid white;
+
+  > p {
+    font-size: 28px;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 15px;
+  }
+}
+
+.switch:hover {
+  cursor: pointer;
+}
+
+.LineBtnForSlider {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+
+  left: 32px;
+  right: 32px;
+
+  display: flex;
+  justify-content: space-between;
+  pointer-events: none;
+
+  > button {
+    pointer-events: auto;
+    max-width: 48px;
+    width: 100%;
+    height: 48px;
+    border-radius: 50%;
+    border: none;
+    background-color: white;
+  }
+}
