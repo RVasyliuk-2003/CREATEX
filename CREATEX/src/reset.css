@@ -97,6 +97,10 @@ button:hover {
   cursor: pointer;
 }
 
+input:focus {
+  outline: none;
+}
+
 body {
   min-height: 100vh;
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
