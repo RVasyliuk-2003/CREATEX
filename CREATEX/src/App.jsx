@@ -8,14 +8,14 @@ import ContactForm from "./components/ContactForm/ContactForm";
 
 const App = () => {
   return (
-    <>
-      <BrowserRouter>
+    <BrowserRouter>
+      <div className={styles.maxContainer}>
         <Header />
         <Main />
         {/* <ContactForm /> */}
         <Footer />
-      </BrowserRouter>
-    </>
+      </div>
+    </BrowserRouter>
   );
 };
 
