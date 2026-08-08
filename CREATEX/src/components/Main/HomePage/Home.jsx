@@ -5,9 +5,7 @@ import News from "./Newss/News";
 import OurServices from "./OurServices/OurServices";
 import OurValues from "./OurValues/OurValues";
 import Partners from "./Partners/Partners";
-
-import Header from "../../Header/Header";
-import Footer from "../../Footer/Footer";
+import QuestionForm from "./QuestionForm/QuestionForm";
 
 const Home = () => {
   return (
@@ -15,11 +13,11 @@ const Home = () => {
       <Hero />
       <HomeVideo />
       <OurValues />
+      <QuestionForm />
       <OurServices />
       <Partners />
       <Figures />
       <News />
-      
     </>
   );
 };
