@@ -1,0 +1,112 @@
+.sectionColor {
+  background-color: #f4f5f6;
+}
+
+h2 {
+  font-size: 46px;
+  font-weight: 700;
+  line-height: 130%;
+}
+
+span {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 160%;
+}
+
+.mainContainerPartners {
+  display: flex;
+  flex-direction: column;
+  gap: 170px;
+  align-items: center;
+
+  padding-top: 80px;
+}
+
+.partnersBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
+}
+
+.partnersImgBox {
+  display: flex;
+  gap: 100px;
+  width: 100%;
+
+  > img {
+    display: block;
+    width: 120px;
+    height: 64px;
+  }
+}
+
+.mainClientsContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.leftClientBox {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.peopleBox {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+  max-width: 600px;
+  width: 100%;
+
+  > img {
+    max-width: 72px;
+    width: 100%;
+
+    border-radius: 50%;
+  }
+
+  > p {
+    font-size: 14px;
+    line-height: 160%;
+    color: #1e212c;
+  }
+}
+
+.peopleBoxSlider {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+
+.peopleBoxText {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+
+  > p {
+    color: #9fa0a3;
+    font-size: 14px;
+    line-height: 150%;
+  }
+}
+
+.peopleBoxBtnSlider {
+  display: flex;
+  gap: 20px;
+
+  > button {
+    background: initial;
+    border: none;
+    cursor: pointer;
+  }
+}
+
+.rightClientImg {
+  position: relative;
+  top: 100px;
+}
