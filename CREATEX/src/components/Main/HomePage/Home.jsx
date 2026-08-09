@@ -6,6 +6,7 @@ import OurServices from "./OurServices/OurServices";
 import OurValues from "./OurValues/OurValues";
 import Partners from "./Partners/Partners";
 import QuestionForm from "./QuestionForm/QuestionForm";
+import OurWork from "./OurWork/OurWork";
 
 const Home = () => {
   return (
@@ -15,6 +16,7 @@ const Home = () => {
       <OurValues />
       <QuestionForm />
       <OurServices />
+      <OurWork />
       <Partners />
       <Figures />
       <News />
