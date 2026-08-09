@@ -12,7 +12,7 @@ const App = () => {
       <div className={styles.maxContainer}>
         <Header />
         <Main />
-        {/* <ContactForm /> */}
+        <ContactForm />
         <Footer />
       </div>
     </BrowserRouter>

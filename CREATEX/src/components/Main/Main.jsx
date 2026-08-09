@@ -4,14 +4,18 @@ import ServiceHome from "./Servicess/Servises/ServiceHome/ServiceHome";
 import WorkHome from "./Work/WorkHome/WorkHome";
 import NewsHome from "./Newss/NewsHome/NewsHome";
 
+import { Routes, Route } from "react-router-dom";
+
 const Main = () => {
   return (
     <main>
-      <Home />
-      <AboutUsHome />
-      <ServiceHome />
-      <WorkHome />
-      <NewsHome />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/AboutUsHome" element={<AboutUsHome />} />
+        <Route path="/services" element={<ServiceHome />} />
+        <Route path="/WorkHome" element={<WorkHome />} />
+        <Route path="/NewsHome" element={<NewsHome />} />
+      </Routes>
     </main>
   );
 };
