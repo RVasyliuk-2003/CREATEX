@@ -105,6 +105,10 @@ input:focus {
   outline: none;
 }
 
+img {
+  display: block;
+}
+
 body {
   min-height: 100vh;
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;

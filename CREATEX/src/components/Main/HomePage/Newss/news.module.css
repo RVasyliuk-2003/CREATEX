@@ -1,0 +1,151 @@
+h2 {
+  font-size: 46px;
+  font-weight: 700;
+  line-height: 130%;
+}
+
+.facrsMainContainer {
+  margin-top: 180px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
+
+  /* for img-background */
+  position: relative;
+}
+
+img {
+  object-fit: cover;
+}
+
+.facrsBox {
+  display: flex;
+  gap: 48px;
+}
+
+.facts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+
+  > img {
+    max-width: 148px;
+    width: 100%;
+    height: 148px;
+  }
+
+  > p {
+    font-size: 14px;
+    line-height: 150%;
+    color: #1e212c;
+  }
+}
+
+/* Next news contsiner */
+
+.newsMainContainer {
+  margin-top: 180px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
+
+  padding-bottom: 120px;
+}
+
+.newsMainBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.newsRightContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.newsBox {
+  display: flex;
+  flex-direction: column;
+
+  border-radius: 4px;
+  box-shadow: 5px 12px 20px 0 rgba(0, 0, 0, 0.08);
+  > img {
+    border-radius: 4px 4px 0px 0px;
+  }
+}
+
+.textNewsBox {
+  padding: 16px 0px 25px 24px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  > h6 {
+    color: #1e212c;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 150%;
+  }
+
+  > span {
+    color: #787a80;
+    font-size: 14px;
+    line-height: 150%;
+  }
+
+  > p {
+    margin-top: 4px;
+    color: #424551;
+    font-size: 16px;
+    line-height: 160%;
+  }
+}
+
+.viewPostBox {
+  margin-top: 20px;
+
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+
+  width: 100%;
+
+  > h5 {
+    color: #1e212c;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 150%;
+  }
+
+  > button {
+    background-color: #ff5a30;
+    border: none;
+    border-radius: 4px;
+    max-width: 212px;
+    width: 100%;
+    height: 52px;
+
+    color: white;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 52px;
+  }
+}
+
+.backgroundImage {
+  max-width: 1065px;
+  width: 100%;
+  height: 860px;
+  position: absolute;
+  transform: rotate(-126deg);
+  opacity: 30%;
+  left: -800px;
+  top: -400px;
+
+  z-index: -2;
+}
