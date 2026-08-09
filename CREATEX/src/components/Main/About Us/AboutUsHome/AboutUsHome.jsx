@@ -6,9 +6,6 @@ import OurPartners from "./OurPartners/OurPartners";
 import OurTeam from "./OurTeam/OurTeam";
 import OurValues from "./OurValues/OurValues";
 import Pros from "./Pros/Pros";
-
-import ContactForm from "../../../ContactForm/ContactForm";
-
 const AboutUsHome = () => {
   return (
     <>
@@ -19,9 +16,7 @@ const AboutUsHome = () => {
       <OurHistory />
       <OurPartners />
       <OurTeam />
-      <MapWork />
-      <ContactForm />
-    </>
+      <MapWork />    </>
   );
 };
 
