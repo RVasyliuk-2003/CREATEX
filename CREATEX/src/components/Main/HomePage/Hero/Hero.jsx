@@ -3,7 +3,9 @@ import style from "./hero.module.css";
 import line from "./images/Line.svg";
 import line2 from "./images/Line2.svg";
 
-const Hero = () => {
+import RequestModal from "../../RequestForm/RequestModal";
+
+const Hero = ({ setRequestMdl }) => {
   return (
     <section className={`containerForImgBacground ${style.heroBg}`}>
       <div className={style.LineBtnForSlider}>
@@ -14,6 +16,7 @@ const Hero = () => {
           <img src={line2} alt="line2" />
         </button>
       </div>
+
       <div className="container">
         <div className={style.mainContainer}>
           <h1>
@@ -26,7 +29,12 @@ const Hero = () => {
           </p>
           <div className={style.btnBox}>
             <button className={style.btnLEARN}>LEARN MORE ABOUT US</button>
-            <button className={style.btnSUBMIT}>SUBMIT REQUEST</button>
+            <button
+              onClick={() => setRequestMdl(true)}
+              className={style.btnSUBMIT}
+            >
+              SUBMIT REQUEST
+            </button>
           </div>
 
           <div className={style.switchContainer}>

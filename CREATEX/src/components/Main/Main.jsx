@@ -6,11 +6,11 @@ import NewsHome from "./Newss/NewsHome/NewsHome";
 
 import { Routes, Route } from "react-router-dom";
 
-const Main = () => {
+const Main = ({ setRequestMdl }) => {
   return (
     <main>
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<Home setRequestMdl={setRequestMdl} />} />
         <Route path="/AboutUsHome" element={<AboutUsHome />} />
         <Route path="/services" element={<ServiceHome />} />
         <Route path="/WorkHome" element={<WorkHome />} />

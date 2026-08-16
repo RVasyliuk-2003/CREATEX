@@ -8,10 +8,13 @@ import Partners from "./Partners/Partners";
 import QuestionForm from "./QuestionForm/QuestionForm";
 import OurWork from "./OurWork/OurWork";
 
-const Home = () => {
+import RequestModal from "../RequestForm/RequestModal";
+
+const Home = ({ setRequestMdl }) => {
   return (
     <>
-      <Hero />
+
+      <Hero setRequestMdl={setRequestMdl} />
       <HomeVideo />
       <OurValues />
       <QuestionForm />
