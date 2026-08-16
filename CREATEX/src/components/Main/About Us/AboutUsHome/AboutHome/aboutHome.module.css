@@ -1,0 +1,58 @@
+h1 {
+  margin-top: 40px;
+  font-size: 72px;
+  font-weight: 700;
+  line-height: 130%;
+  color: #1e212c;
+}
+
+.maxSizeSection {
+  max-width: 1920px;
+  width: 100%;
+
+  position: relative;
+}
+.relativeBox {
+  display: flex;
+  padding-bottom: 180px;
+}
+
+.HeroContainer {
+  margin-top: 80px;
+  max-width: 600px;
+  width: 100%;
+
+  > span > a {
+    font-size: 14px;
+    line-height: 150%;
+    color: #9a9ca5;
+  }
+
+  > p {
+    margin-top: 24px;
+    font-size: 20px;
+    line-height: 150%;
+    color: #787a80;
+  }
+}
+
+.img1 {
+  max-width: 677px;
+  width: 100%;
+  position: absolute;
+  z-index: 20;
+
+  top: -73px;
+  right: 0px;
+}
+
+.img2 {
+  max-width: 1026px;
+  width: 100%;
+  position: absolute;
+  z-index: 15;
+  top: -73px;
+  right: 0px;
+
+  opacity: 10%;
+}
