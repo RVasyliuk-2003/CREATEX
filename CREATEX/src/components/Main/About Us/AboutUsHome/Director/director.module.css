@@ -1,0 +1,127 @@
+.flexContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 240px;
+  padding: 120px 0px;
+  background-color: white;
+  position: relative;
+  z-index: 30;
+}
+
+.perfectBox {
+  display: flex;
+  justify-content: space-between;
+}
+
+.perfect {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+
+  text-align: center;
+
+  > img {
+    max-width: 48px;
+    width: 100%;
+  }
+
+  > b {
+    font-size: 46px;
+    font-weight: 700;
+    line-height: 130%;
+    color: #ff5a30;
+  }
+
+  > span {
+    font-size: 14px;
+    line-height: 150%;
+    color: #1e212cbe;
+  }
+}
+
+.directorBox {
+  display: flex;
+  position: relative;
+}
+
+.manImg {
+  max-width: 525px;
+  width: 100%;
+  border-radius: 4px;
+}
+
+.bracesImg {
+  position: absolute;
+  left: 62px;
+  top: 80px;
+}
+
+.textContainer {
+  max-width: 735px;
+  width: 100%;
+  padding: 80px 115px;
+  background-color: white;
+  border-radius: 4px;
+  box-shadow: 0 20px 55px rgba(0, 0, 0, 0.08);
+  box-sizing: border-box;
+
+  position: absolute;
+  top: -120px;
+  right: 20px;
+
+  > p {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 150%;
+    color: #1e212c;
+  }
+}
+
+.textP2 {
+  margin-top: 30px;
+}
+
+.signatureContainer {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  > img {
+    max-width: 100px;
+    width: 100%;
+  }
+
+  .signaturetextName {
+    > p {
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 160%;
+      color: #1e212c;
+    }
+
+    > span {
+      margin-top: 4px;
+
+      font-size: 14px;
+      line-height: 150%;
+      color: #787a80;
+    }
+  }
+}
+
+.absoluteBgImg {
+  position: absolute;
+  right: -250px;
+  bottom: -350px;
+
+  max-width: 1000px;
+  width: 100%;
+  opacity: 20%;
+  transform: rotate(130deg);
+}
+
+.positionSection {
+  position: relative;
+}
