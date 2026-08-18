@@ -1,0 +1,91 @@
+.backgroundSection {
+  background-color: #f4f5f6;
+}
+
+.mainHistoryContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+
+  padding: 100px 0px;
+}
+
+.listContainer {
+  > h1 {
+    font-size: 46px;
+    font-weight: 700;
+    line-height: 130%;
+    color: #1e212c;
+  }
+
+  > ul {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+
+    gap: 20px;
+  }
+
+  li {
+    position: relative;
+    padding-left: 32px;
+  }
+
+  li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+
+    width: 10px;
+    height: 10px;
+
+    background-color: #9a9ca5;
+    border-radius: 50%;
+  }
+
+  a {
+    font-size: 28px;
+    font-weight: 700;
+    color: #9a9ca5;
+    line-height: 150%;
+  }
+}
+
+.ImgScrolContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 38px;
+
+  max-width: 810px;
+  width: 100%;
+
+  > p {
+    font-size: 16px;
+
+    color: #424551;
+    line-height: 160%;
+  }
+}
+
+.ImgScrolBox {
+  > img {
+    border-radius: 4px;
+  }
+}
+
+.btnScrol {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+}
+
+.btn {
+  max-width: 48px;
+  width: 100%;
+  height: 48px;
+  background-color: #ff5a30;
+
+  border-radius: 50%;
+}
