@@ -6,7 +6,7 @@ import slippers from "./images/ic-slippers.svg";
 
 const OurValues = () => {
   return (
-    <section>
+    <section className={style.backgroundSection}>
       <div className="container">
         <div className={style.mainBox}>
           <h2>Our core values</h2>
