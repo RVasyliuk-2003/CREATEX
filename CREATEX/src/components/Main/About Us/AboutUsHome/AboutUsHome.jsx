@@ -16,7 +16,8 @@ const AboutUsHome = () => {
       <OurHistory />
       <OurPartners />
       <OurTeam />
-      <MapWork />    </>
+      <MapWork />
+    </>
   );
 };
 
