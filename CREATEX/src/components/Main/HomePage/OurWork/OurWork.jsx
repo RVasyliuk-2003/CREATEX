@@ -12,12 +12,14 @@ import Building6 from "./images/images6.jfif";
 import Building7 from "./images/images7.jfif";
 
 import { useRef } from "react";
+import { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
 import "swiper/css";
 
 const OurWork = () => {
   const swiperRef = useRef(null);
+  const [hoveredIndex, setHoveredIndex] = useState(null);
 
   return (
     <section>
@@ -45,68 +47,117 @@ const OurWork = () => {
             className={style.mainCartSliderBox}
           >
             <SwiperSlide>
-              <div className={style.cartSlider}>
+              <div
+                onMouseEnter={() => setHoveredIndex(1)}
+                onMouseLeave={() => setHoveredIndex(null)}
+                className={style.cartSlider}
+              >
                 <img src={Building1} alt="Building1" />
                 <div>
                   <h5>Red Finger Building</h5>
                   <p>Business Centers</p>
                 </div>
+                {hoveredIndex === 1 && (
+                  <button className={style.hoverBtnSlide}>VIEW PROJECT</button>
+                )}
               </div>
             </SwiperSlide>
 
             <SwiperSlide>
-              <div className={style.cartSlider}>
+              <div
+                onMouseEnter={() => setHoveredIndex(2)}
+                onMouseLeave={() => setHoveredIndex(null)}
+                className={style.cartSlider}
+              >
                 <img src={Building2} alt="Building2" />
                 <div>
                   <h5>Cubes Building</h5>
                   <p>Business Centers</p>
                 </div>
+                {hoveredIndex === 2 && (
+                  <button className={style.hoverBtnSlide}>VIEW PROJECT</button>
+                )}
               </div>
             </SwiperSlide>
 
             <SwiperSlide>
-              <div className={style.cartSlider}>
+              <div
+                onMouseEnter={() => setHoveredIndex(3)}
+                onMouseLeave={() => setHoveredIndex(null)}
+                className={style.cartSlider}
+              >
                 <img src={Building3} alt="Building3" />
                 <div>
                   <h5>The Pencil Building</h5>
                   <p>Stores & Malls</p>
                 </div>
+                {hoveredIndex === 3 && (
+                  <button className={style.hoverBtnSlide}>VIEW PROJECT</button>
+                )}
               </div>
             </SwiperSlide>
             <SwiperSlide>
-              <div className={style.cartSlider}>
+              <div
+                onMouseEnter={() => setHoveredIndex(4)}
+                onMouseLeave={() => setHoveredIndex(null)}
+                className={style.cartSlider}
+              >
                 <img src={Building4} alt="Building4" />
                 <div>
                   <h5>Red Finger Building</h5>
                   <p>Business Centers</p>
                 </div>
+                {hoveredIndex === 4 && (
+                  <button className={style.hoverBtnSlide}>VIEW PROJECT</button>
+                )}
               </div>
             </SwiperSlide>
             <SwiperSlide>
-              <div className={style.cartSlider}>
+              <div
+                onMouseEnter={() => setHoveredIndex(5)}
+                onMouseLeave={() => setHoveredIndex(null)}
+                className={style.cartSlider}
+              >
                 <img src={Building5} alt="Building5" />
                 <div>
                   <h5>Cubes Building</h5>
                   <p>Stores & Malls</p>
                 </div>
+                {hoveredIndex === 5 && (
+                  <button className={style.hoverBtnSlide}>VIEW PROJECT</button>
+                )}
               </div>
             </SwiperSlide>
             <SwiperSlide>
-              <div className={style.cartSlider}>
+              <div
+                onMouseEnter={() => setHoveredIndex(6)}
+                onMouseLeave={() => setHoveredIndex(null)}
+                className={style.cartSlider}
+              >
                 <img src={Building6} alt="Building6" />
                 <div>
                   <h5>The Pencil Building</h5>
                   <p>Stores & Malls</p>
                 </div>
+                {hoveredIndex === 6 && (
+                  <button className={style.hoverBtnSlide}>VIEW PROJECT</button>
+                )}
               </div>
             </SwiperSlide>
             <SwiperSlide>
-              <div className={style.cartSlider}>
+              <div
+                onMouseEnter={() => setHoveredIndex(7)}
+                onMouseLeave={() => setHoveredIndex(null)}
+                className={style.cartSlider}
+              >
                 <img src={Building7} alt="Building7" />
                 <div>
                   <h5>Red Finger Building</h5>
                   <p>Stores & Malls</p>
                 </div>
+                {hoveredIndex === 7 && (
+                  <button className={style.hoverBtnSlide}>VIEW PROJECT</button>
+                )}
               </div>
             </SwiperSlide>
           </Swiper>
