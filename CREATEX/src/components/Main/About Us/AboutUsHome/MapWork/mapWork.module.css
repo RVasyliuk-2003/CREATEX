@@ -1,0 +1,74 @@
+.backgroundColorSection {
+  background-color: #f4f5f6;
+  padding-top: 120px;
+  padding-bottom: 80px;
+}
+
+.mainContainerWorld {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
+
+  > h2 {
+    font-size: 46px;
+    font-weight: 700;
+    line-height: 130%;
+  }
+}
+
+.imgMapBox {
+  position: relative;
+}
+
+.australia {
+  position: absolute;
+}
+
+.imgMapbackground {
+  position: relative;
+  background-image: url("./images/map.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 563px;
+
+  > img {
+    position: absolute;
+    z-index: 20;
+
+    max-width: 40px;
+    width: 100%;
+    height: 40px;
+  }
+}
+
+.australia {
+  bottom: 90px;
+  right: 160px;
+}
+
+.canada {
+  top: 115px;
+  left: 155px;
+}
+
+.usa {
+  top: 215px;
+  left: 215px;
+}
+
+.ukraine {
+  top: 170px;
+  left: 670px;
+}
+
+.china {
+  top: 235px;
+  right: 270px;
+}
+
+.germany {
+  top: 160px;
+  left: 605px;
+}
