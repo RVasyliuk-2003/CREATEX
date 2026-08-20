@@ -6,6 +6,10 @@ import Right from "./images/Line2.svg";
 import Building1 from "./images/image.png";
 import Building2 from "./images/image2.png";
 import Building3 from "./images/image3.jpg";
+import Building4 from "./images/images4.jfif";
+import Building5 from "./images/images5.jfif";
+import Building6 from "./images/images6.jfif";
+import Building7 from "./images/images7.jfif";
 
 import { useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
