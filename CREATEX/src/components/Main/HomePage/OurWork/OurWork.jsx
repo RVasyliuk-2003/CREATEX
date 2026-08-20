@@ -75,7 +75,25 @@ const OurWork = () => {
             </SwiperSlide>
             <SwiperSlide>
               <div className={style.cartSlider}>
-                <img src={Building3} alt="Building3" />
+                <img src={Building4} alt="Building4" />
+                <div>
+                  <h5>Red Finger Building</h5>
+                  <p>Business Centers</p>
+                </div>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className={style.cartSlider}>
+                <img src={Building5} alt="Building5" />
+                <div>
+                  <h5>Cubes Building</h5>
+                  <p>Stores & Malls</p>
+                </div>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className={style.cartSlider}>
+                <img src={Building6} alt="Building6" />
                 <div>
                   <h5>The Pencil Building</h5>
                   <p>Stores & Malls</p>
@@ -84,9 +102,9 @@ const OurWork = () => {
             </SwiperSlide>
             <SwiperSlide>
               <div className={style.cartSlider}>
-                <img src={Building3} alt="Building3" />
+                <img src={Building7} alt="Building7" />
                 <div>
-                  <h5>The Pencil Building</h5>
+                  <h5>Red Finger Building</h5>
                   <p>Stores & Malls</p>
                 </div>
               </div>
