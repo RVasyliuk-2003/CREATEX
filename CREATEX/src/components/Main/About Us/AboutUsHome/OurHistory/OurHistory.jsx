@@ -1,8 +1,10 @@
 import style from "./ourHistory.module.css";
-
+import { useState } from "react";
 import mainHistorty from "./images/history.jpg";
 
 const OurHistory = () => {
+  const [activeTab, setActiveTab] = useState("Present");
+
   return (
     <section className={style.backgroundSection}>
       <div className="container">
@@ -12,31 +14,98 @@ const OurHistory = () => {
 
             <ul>
               <li>
-                <a href="">Present</a>
+                <button
+                  className={
+                    activeTab === "Present" ? style.isActive : style.tabBtn
+                  }
+                  onClick={() => setActiveTab("Present")}
+                >
+                  Present
+                </button>
               </li>
               <li>
-                <a href="">March 2019</a>
+                <button
+                  className={
+                    activeTab === "March 2019" ? style.isActive : style.tabBtn
+                  }
+                  onClick={() => setActiveTab("March 2019")}
+                >
+                  March 2019
+                </button>
               </li>
               <li>
-                <a href="">November 2018</a>
+                <button
+                  className={
+                    activeTab === "November 2018"
+                      ? style.isActive
+                      : style.tabBtn
+                  }
+                  onClick={() => setActiveTab("November 2018")}
+                >
+                  November 2018
+                </button>
               </li>
               <li>
-                <a href="">July 2015</a>
+                <button
+                  className={
+                    activeTab === "July 2015" ? style.isActive : style.tabBtn
+                  }
+                  onClick={() => setActiveTab("July 2015")}
+                >
+                  July 2015
+                </button>
               </li>
               <li>
-                <a href="">August 2010</a>
+                <button
+                  className={
+                    activeTab === "August 2010" ? style.isActive : style.tabBtn
+                  }
+                  onClick={() => setActiveTab("August 2010")}
+                >
+                  August 2010
+                </button>
               </li>
               <li>
-                <a href="">February 2007</a>
+                <button
+                  className={
+                    activeTab === "February 2007"
+                      ? style.isActive
+                      : style.tabBtn
+                  }
+                  onClick={() => setActiveTab("February 2007")}
+                >
+                  February 2007
+                </button>
               </li>
               <li>
-                <a href="">May 2004</a>
+                <button
+                  className={
+                    activeTab === "May 2004" ? style.isActive : style.tabBtn
+                  }
+                  onClick={() => setActiveTab("May 2004")}
+                >
+                  May 2004
+                </button>
               </li>
               <li>
-                <a href="">October 2001</a>
+                <button
+                  className={
+                    activeTab === "October 2001" ? style.isActive : style.tabBtn
+                  }
+                  onClick={() => setActiveTab("October 2001")}
+                >
+                  October 2001
+                </button>
               </li>
               <li>
-                <a href="">June 2000</a>
+                <button
+                  className={
+                    activeTab === "June 2000" ? style.isActive : style.tabBtn
+                  }
+                  onClick={() => setActiveTab("June 2000")}
+                >
+                  June 2000
+                </button>
               </li>
             </ul>
           </div>

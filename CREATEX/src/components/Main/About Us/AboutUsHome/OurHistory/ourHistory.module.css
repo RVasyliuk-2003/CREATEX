@@ -45,12 +45,23 @@
     border-radius: 50%;
   }
 
-  a {
+  button {
     font-size: 28px;
     font-weight: 700;
     color: #9a9ca5;
     line-height: 150%;
+    cursor: pointer;
+
+    background: none;
+    border: none;
   }
+  .isActive {
+    color: #ff5a30;
+  }
+}
+
+.isActive {
+  color: #ff5a30;
 }
 
 .ImgScrolContainer {
