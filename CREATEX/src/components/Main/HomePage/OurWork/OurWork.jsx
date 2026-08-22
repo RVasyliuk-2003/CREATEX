@@ -21,6 +21,8 @@ const OurWork = () => {
   const swiperRef = useRef(null);
   const [hoveredIndex, setHoveredIndex] = useState(null);
 
+  const [colorSliderBtn, setColorSliderBtn] = useState("next");
+
   return (
     <section>
       <div className="container">
@@ -30,10 +32,22 @@ const OurWork = () => {
               Browse our selected projects <br /> and learn more about our work
             </h2>
             <div className={style.mainTextBtnSliderBox}>
-              <button onClick={() => swiperRef.current?.slidePrev()}>
+              <button
+                className={colorSliderBtn === "next" ? style.isActiveBtn : null}
+                onClick={() => {
+                  swiperRef.current?.slidePrev();
+                  setColorSliderBtn("next");
+                }}
+              >
                 <img src={Left} alt="Left" />
               </button>
-              <button onClick={() => swiperRef.current?.slideNext()}>
+              <button
+                className={colorSliderBtn === "prev" ? style.isActiveBtn : null}
+                onClick={() => {
+                  swiperRef.current?.slideNext();
+                  setColorSliderBtn("prev");
+                }}
+              >
                 <img src={Right} alt="Right" />
               </button>
             </div>
