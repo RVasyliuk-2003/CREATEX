@@ -2,8 +2,12 @@ import style from "./ourHistory.module.css";
 import { useState } from "react";
 import mainHistorty from "./images/history.jpg";
 
+import line1 from "./images/Line.svg";
+import line2 from "./images/Line2.svg";
+
 const OurHistory = () => {
   const [activeTab, setActiveTab] = useState("Present");
+  const [activeBtnSlider, setActiveBtnSlider] = useState("next");
 
   return (
     <section className={style.backgroundSection}>
@@ -112,12 +116,18 @@ const OurHistory = () => {
 
           <div className={style.ImgScrolContainer}>
             <div className={style.btnScrol}>
-              <div className={style.btn}>
-                <img src="" alt="" />
-              </div>
-              <div className={style.btn}>
-                <img src="" alt="" />
-              </div>
+              <button
+                onClick={() => setActiveBtnSlider("next")}
+                className={`${style.btn} ${activeBtnSlider === "next" ? style.activeBtn : null}`}
+              >
+                <img src={line1} alt="line1" />
+              </button>
+              <button
+                onClick={() => setActiveBtnSlider("prev")}
+                className={`${style.btn} ${activeBtnSlider === "prev" ? style.activeBtn : null}`}
+              >
+                <img src={line2} alt="line2" />
+              </button>
             </div>
             <div className={style.ImgScrolBox}>
               <img src={mainHistorty} alt="mainHistortyImg" />

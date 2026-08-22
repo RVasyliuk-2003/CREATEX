@@ -96,7 +96,16 @@
   max-width: 48px;
   width: 100%;
   height: 48px;
-  background-color: #ff5a30;
-
   border-radius: 50%;
+  cursor: pointer;
+  border: none;
+  background: none;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.activeBtn {
+  background-color: #ff5a30;
 }
