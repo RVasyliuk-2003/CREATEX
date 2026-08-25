@@ -1,4 +1,5 @@
 import styles from "./availableMain.module.css";
+import mainImg from "./images/main.png";
 
 const AvailableMain = () => {
   return (
