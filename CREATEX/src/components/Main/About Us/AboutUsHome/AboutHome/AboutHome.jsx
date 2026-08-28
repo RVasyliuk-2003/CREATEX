@@ -2,8 +2,7 @@ import style from "./aboutHome.module.css";
 import img1 from "./images/img1.png";
 import img2 from "./images/img2.png";
 
-import { Link } from "react-router-dom";
-import AboutUs from "../../AboutUs/AboutUs";
+import { NavLink } from "react-router-dom";
 
 const AboutHome = () => {
   return (
@@ -15,7 +14,25 @@ const AboutHome = () => {
         <div className={style.relativeBox}>
           <div className={style.HeroContainer}>
             <span>
-              <Link to="/">Homepage</Link>/<Link to="/about-us">About Us</Link>
+              <NavLink to="/" end>
+                Homepage
+              </NavLink>
+              <NavLink
+                to="/AboutUsHome"
+                style={({ isActive }) => ({
+                  color: isActive ? "#9A9CA5" : "#424551",
+                })}
+              >
+                / About Us
+              </NavLink>
+              <NavLink
+                to="/about-us"
+                style={({ isActive }) => ({
+                  color: isActive ? "#9A9CA5" : "#424551",
+                })}
+              >
+                / Available Positions
+              </NavLink>
             </span>
 
             <h1>ABOUT US</h1>

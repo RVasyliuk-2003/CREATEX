@@ -1,3 +1,9 @@
+a {
+  font-size: 14px;
+  line-height: 150%;
+  font-weight: 400;
+}
+
 .maxSizeSection {
   max-width: 1920px;
   width: 100%;
@@ -20,12 +26,6 @@
     font-weight: 700;
     line-height: 130%;
     color: #1e212c;
-  }
-
-  > span > a {
-    font-size: 14px;
-    line-height: 150%;
-    color: #9a9ca5;
   }
 
   > p {
