@@ -3,6 +3,7 @@ import img1 from "./images/img1.png";
 import img2 from "./images/img2.png";
 
 import { Link } from "react-router-dom";
+import AboutUs from "../../AboutUs/AboutUs";
 
 const AboutHome = () => {
   return (
@@ -14,8 +15,7 @@ const AboutHome = () => {
         <div className={style.relativeBox}>
           <div className={style.HeroContainer}>
             <span>
-              <Link to="/AboutHome">Homepage</Link> /
-              <Link to="/AboutUs">About Us</Link>
+              <Link to="/">Homepage</Link>/<Link to="/about-us">About Us</Link>
             </span>
 
             <h1>ABOUT US</h1>
