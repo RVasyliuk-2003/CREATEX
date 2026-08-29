@@ -1,0 +1,42 @@
+a {
+  text-decoration: none;
+  color: #424551;
+}
+
+.secBox {
+  padding-top: 80px;
+  background-color: #f4f5f6;
+  position: relative;
+  overflow: hidden;
+}
+
+.mainImg {
+  position: absolute;
+  max-width: 975px;
+  width: 100%;
+
+  top: 0px;
+  right: 0px;
+}
+
+.mainContainer {
+  max-width: 600px;
+  width: 100%;
+
+  padding-bottom: 115px;
+
+  > h2 {
+    margin-top: 40px;
+    color: #1e212c;
+    font-size: 72px;
+    font-weight: 700;
+    line-height: 130%;
+  }
+
+  > p {
+    margin-top: 24px;
+    color: #787a80;
+    font-size: 20px;
+    line-height: 150%;
+  }
+}
