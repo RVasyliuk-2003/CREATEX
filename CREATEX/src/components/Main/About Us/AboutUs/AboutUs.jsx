@@ -6,8 +6,8 @@ const AboutUs = () => {
   return (
     <>
       <AvailableMain />
-      <Benefits />
       <OurCity />
+      <Benefits />
     </>
   );
 };
