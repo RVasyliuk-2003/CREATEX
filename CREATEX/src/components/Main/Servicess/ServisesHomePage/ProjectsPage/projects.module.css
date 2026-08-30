@@ -1,0 +1,81 @@
+section {
+  overflow: hidden;
+}
+
+.mainContainer {
+  padding-top: 120px;
+  display: flex;
+  flex-direction: column;
+  gap: 120px;
+  padding-bottom: 180px;
+
+  position: relative;
+}
+
+.projectsContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  > img {
+    max-width: 575px;
+    width: 100%;
+    border-radius: 4px;
+  }
+}
+
+.infoImg {
+  max-width: 575px;
+  width: 100%;
+
+  > h4 {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 150%;
+    color: #1e212c;
+  }
+
+  > p {
+    margin-top: 24px;
+    font-size: 16px;
+    line-height: 160%;
+    color: #787a80;
+  }
+
+  > button {
+    margin-top: 48px;
+    width: 160px;
+    height: 44px;
+    background: none;
+    border-radius: 4px;
+    border: 1px solid #ff5a30;
+
+    color: #ff5a30;
+    line-height: 44px;
+    font-weight: 700;
+    font-size: 14px;
+  }
+}
+
+.absoluteImg1 {
+  position: absolute;
+  max-width: 790px;
+  width: 100%;
+
+  top: 800px;
+  left: 1200px;
+  opacity: 30%;
+  transform: rotate(58deg);
+}
+
+.absoluteImg2 {
+  position: absolute;
+  max-width: 790px;
+  width: 100%;
+
+  bottom: -200px;
+  left: -800px;
+
+  opacity: 30%;
+  transform: rotate(32deg);
+}
