@@ -71,18 +71,14 @@
 
   max-width: 810px;
   width: 100%;
-
-  > p {
-    font-size: 16px;
-
-    color: #424551;
-    line-height: 160%;
-  }
 }
 
 .ImgScrolBox {
-  > img {
+  img {
     border-radius: 4px;
+    width: 100%;
+    max-width: 810px;
+    height: 450px;
   }
 }
 
@@ -108,4 +104,19 @@
 
 .activeBtn {
   background-color: #ff5a30;
+}
+
+.active {
+  display: block;
+
+  > p {
+    font-size: 16px;
+
+    color: #424551;
+    line-height: 160%;
+  }
+}
+
+.nonActive {
+  display: none;
 }
