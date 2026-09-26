@@ -10,9 +10,23 @@ const ServiHome = () => {
       <div className="container">
         <div className={style.mainContainer}>
           <div>
-            <NavLink>Homepage </NavLink>
-            <NavLink>/ Services </NavLink>
-            <NavLink>/ Interior Design </NavLink>
+            <NavLink to="/">Homepage</NavLink>
+            <NavLink
+              to="/ServicesHome"
+              style={({ isActive }) => ({
+                color: isActive ? "#9A9CA5" : "#424551",
+              })}
+            >
+              / Services
+            </NavLink>
+            <NavLink
+              to="/Service"
+              style={({ isActive }) => ({
+                color: isActive ? "#9A9CA5" : "#424551",
+              })}
+            >
+              / Interior Design
+            </NavLink>
           </div>
 
           <h2>SERVICES</h2>
