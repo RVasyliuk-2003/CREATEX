@@ -11,6 +11,8 @@ const ContactForm = () => {
 
   const [error, setError] = useState("");
 
+  const [brColor, setBrColor] = useState(true);
+
   const isNameValid = name.trim().length >= 2;
 
   const phoneRegex = /^\+?[0-9]{9,15}$/;
@@ -21,7 +23,9 @@ const ContactForm = () => {
 
   const isFormValid = isNameValid || isNumberValid || isEmailValid;
 
-  const errorForm = () => {
+  const errorForm = (e) => {
+    e.preventDefault();
+    setBrColor(false);
     if (!isFormValid) {
       setError("Please fill in all required fields correctly");
       return;
@@ -43,13 +47,14 @@ const ContactForm = () => {
       setError("You must agree to the terms");
       return;
     } else {
-      setError("Форма відправлена");
+      setError("FORM SUBMITTED");
 
       setName("");
       setNumber("");
       setEmail("");
       setMessage("");
       setCheckbox(false);
+      setBrColor(true);
     }
   };
 
@@ -67,6 +72,10 @@ const ContactForm = () => {
                   value={name}
                   placeholder="Your name"
                   onChange={(e) => setName(e.target.value)}
+                  style={{
+                    border:
+                      !isNameValid && !brColor ? "1px solid red" : undefined,
+                  }}
                 />
               </div>
               <div className={style.inptBox}>
@@ -76,6 +85,10 @@ const ContactForm = () => {
                   value={number}
                   placeholder="Your phone number"
                   onChange={(e) => setNumber(e.target.value)}
+                  style={{
+                    border:
+                      !isNumberValid && !brColor ? "1px solid red" : undefined,
+                  }}
                 />
               </div>
               <div className={style.inptBox}>
@@ -85,6 +98,10 @@ const ContactForm = () => {
                   value={email}
                   placeholder="Your working email"
                   onChange={(e) => setEmail(e.target.value)}
+                  style={{
+                    border:
+                      !isEmailValid && !brColor ? "1px solid red" : undefined,
+                  }}
                 />
               </div>
               <div className={style.inptBox}>
@@ -108,8 +125,19 @@ const ContactForm = () => {
                 </p>
               </div>
             </div>
-            <p>{error}</p>
-            <button onClick={() => errorForm()}>SEND REQUEST</button>
+
+            {error && (
+              <p
+                className={style.error}
+                style={{
+                  color: error === "FORM SUBMITTED" ? "green" : "red",
+                }}
+              >
+                {error}
+              </p>
+            )}
+
+            <button onClick={(e) => errorForm(e)}>SEND REQUEST</button>
           </div>
         </div>
       </div>
