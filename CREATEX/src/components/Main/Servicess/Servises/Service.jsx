@@ -11,8 +11,8 @@ const Service = () => {
     <>
       <ServiceHome />
       <Offer />
-      <OurBenefits />
       <Points />
+      <OurBenefits />
       <Pricing />
       <OurProjects />
       <SupportedPr />
