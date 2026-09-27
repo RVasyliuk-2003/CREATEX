@@ -1,0 +1,55 @@
+.mainH4Points {
+  margin-top: 180px;
+  font-size: 46px;
+  font-weight: 700;
+  line-height: 130%;
+  color: #1e212c;
+}
+
+.ourPointsBox {
+  margin-top: 60px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.points {
+  position: relative;
+  max-width: 285px;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  > b {
+    margin-top: 8px;
+    font-size: 46px;
+    font-weight: 700;
+    line-height: 130%;
+    color: #d7dadd;
+  }
+
+  > span {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 150%;
+    color: #1e212c;
+  }
+
+  > p {
+    font-size: 16px;
+    line-height: 160%;
+    color: #787a80;
+  }
+}
+
+.line {
+  position: absolute;
+
+  top: 40px;
+  left: 75px;
+
+  width: 209px;
+  border-bottom: 1px dashed #d7dadd;
+  height: 0;
+}
