@@ -92,7 +92,7 @@ const ContactForm = () => {
                 />
               </div>
               <div className={style.inptBox}>
-                <p>Email</p>
+                <p>Email*</p>
                 <input
                   type="email"
                   value={email}
@@ -105,7 +105,7 @@ const ContactForm = () => {
                 />
               </div>
               <div className={style.inptBox}>
-                <p>Message*</p>
+                <p>Message</p>
                 <input
                   type="text"
                   value={message}
