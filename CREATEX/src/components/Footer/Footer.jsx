@@ -98,9 +98,9 @@ const Footer = () => {
         </div>
 
         <div className={style.downBox}>
-          <a href="#">
-            © All rights reserved. Made with by <img src={Heart} alt="Heart" />
-            Createx Studio
+          <a className={style.allRights} href="#">
+            © All rights reserved. Made with <img src={Heart} alt="Heart" />
+            by Createx Studio
           </a>
 
           <div className={style.goToTopBox}>

@@ -12,7 +12,7 @@ import background from "./images/background.png";
 
 const News = () => {
   return (
-    <section>
+    <section className={style.overHidd}>
       <div className="container">
         <div className={style.facrsMainContainer}>
           <img

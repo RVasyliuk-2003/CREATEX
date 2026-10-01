@@ -8,7 +8,7 @@ import img4 from "./images/img4.jpg";
 
 const Projects = () => {
   return (
-    <section>
+    <section className={style.ovarHidd}>
       <div className="container">
         <div className={style.mainContainer}>
           <img className={style.absoluteImg1} src={fone} alt="fone1" />
