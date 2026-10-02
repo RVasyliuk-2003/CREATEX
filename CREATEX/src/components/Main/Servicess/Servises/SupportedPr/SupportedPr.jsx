@@ -9,7 +9,7 @@ import partner6 from "./../../../HomePage/Partners/images/partner6.png";
 
 const SupportedPr = () => {
   return (
-    <section>
+    <section className={style.bg_color}>
       <div className="container">
         <h2 className={style.h2Partners}>Supported by 12+ partners</h2>
 
