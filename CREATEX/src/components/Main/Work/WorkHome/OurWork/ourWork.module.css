@@ -1,0 +1,36 @@
+.positionSection {
+  position: relative;
+  height: 600px;
+  background-color: #f4f5f6;
+}
+
+.bgImg {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+
+.navigateLink {
+  padding-top: 80px;
+
+  > a {
+    font-size: 14px;
+    line-height: 150%;
+  }
+}
+
+.h1_ourWork {
+  font-size: 72px;
+  font-weight: 700;
+  line-height: 130%;
+  color: #1e212c;
+  margin-top: 53px;
+}
+
+.p_ourWork {
+  font-size: 20px;
+  line-height: 150%;
+  color: #787a80;
+  margin-top: 53px;
+  margin-top: 11px;
+}
