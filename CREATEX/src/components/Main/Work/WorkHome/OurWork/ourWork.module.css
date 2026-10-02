@@ -34,3 +34,11 @@
   margin-top: 53px;
   margin-top: 11px;
 }
+
+.activeLink {
+  color: #9a9ca5;
+}
+
+.noActiveLink {
+  color: #424551;
+}
