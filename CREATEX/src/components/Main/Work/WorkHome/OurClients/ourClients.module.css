@@ -1,0 +1,93 @@
+.bgSection {
+  background-color: #f4f5f6;
+}
+
+.mainContainer {
+  margin-top: 100px;
+  padding-bottom: 120px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  position: relative;
+}
+
+.infoContainer {
+  max-width: 600px;
+  width: 100%;
+
+  > h4 {
+    margin-top: 80px;
+    font-weight: 700;
+    font-size: 46px;
+    line-height: 130%;
+    color: #1e212c;
+  }
+
+  > p {
+    margin-top: 24px;
+
+    font-size: 16px;
+    line-height: 160%;
+    color: #424551;
+  }
+}
+
+.avatarbox {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.avatarImage {
+  margin-top: 60px;
+
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+}
+
+.nameBox {
+  margin-top: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+
+.nameText {
+  > b {
+    color: #1e212c;
+    font-size: 16px;
+    font-weight: 700;
+  }
+
+  > p {
+    margin-top: 5px;
+
+    color: #787a80;
+    font-size: 14px;
+    line-height: 150%;
+  }
+}
+
+.lineBox {
+  display: flex;
+  gap: 20px;
+
+  > img {
+    max-width: 24px;
+    width: 100%;
+    height: 14px;
+  }
+}
+
+.mainImage {
+  max-width: 495px;
+  width: 100%;
+  border-radius: 4px;
+
+  position: absolute;
+  right: 0px;
+  top: 90px;
+}
