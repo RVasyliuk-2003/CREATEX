@@ -40,3 +40,45 @@
     color: #9a9ca5;
   }
 }
+
+.galeryBox {
+  padding-top: 215px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+
+  gap: 25px;
+}
+
+.card {
+  max-width: 390px;
+  width: 100%;
+  background-color: white;
+  border-radius: 4px;
+  border: 1px solid rgb(249, 248, 248);
+  padding-bottom: 24px;
+
+  box-shadow: 0px 20px 20px -8px rgba(30, 33, 44, 0.08);
+
+  > img {
+    max-width: 390px;
+    width: 100%;
+  }
+
+  > h5 {
+    color: #1e212c;
+    font-size: 20px;
+    line-height: 150%;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 16px;
+  }
+  > p {
+    color: #787a80;
+    font-size: 14px;
+    line-height: 150%;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 5px;
+  }
+}
