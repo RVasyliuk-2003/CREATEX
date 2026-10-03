@@ -1,0 +1,42 @@
+.relativecontainer {
+  position: relative;
+}
+
+.catalogBox1 {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+
+  position: absolute;
+  left: 0px;
+  top: -80px;
+}
+
+.catalogBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+
+  width: 230px;
+  height: 154px;
+  background-color: white;
+  border-radius: 4px;
+
+  box-shadow:
+    0px 8px 18px -4px rgba(30, 33, 44, 0.05),
+    0px 20px 36px -4px rgba(30, 33, 44, 0.08);
+
+  > img {
+    margin-top: 32px;
+    max-width: 48px;
+    width: 100%;
+  }
+
+  > p {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 160%;
+    color: #9a9ca5;
+  }
+}
