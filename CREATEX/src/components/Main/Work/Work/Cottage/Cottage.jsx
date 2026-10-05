@@ -20,9 +20,24 @@ const Cottage = () => {
       <img className={style.bgImg} src={bgImg} alt="bgImg" />
       <div className="container">
         <div className={style.navLinkBox}>
-          <NavLink to="/">Homepage</NavLink>
-          <NavLink to="/">/ Work</NavLink>
-          <NavLink to="/">/ Modern Cottage</NavLink>
+          <NavLink
+            className={({ isActive }) => isActive && style.active}
+            to="/"
+          >
+            Homepage
+          </NavLink>
+          <NavLink
+            className={({ isActive }) => isActive && style.active}
+            to="/WorkHome"
+          >
+            / Work
+          </NavLink>
+          <NavLink
+            className={({ isActive }) => isActive && style.active}
+            to="/Work"
+          >
+            / Modern Cottage
+          </NavLink>
         </div>
 
         <h1 className={style.h1_cottage}>{currentProject.title}</h1>
