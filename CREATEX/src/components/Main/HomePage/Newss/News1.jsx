@@ -10,7 +10,7 @@ import img3 from "./images/img3.jpg";
 
 import background from "./images/background.png";
 
-const News = () => {
+const News1 = () => {
   return (
     <section className={style.overHidd}>
       <div className="container">
@@ -81,4 +81,4 @@ const News = () => {
   );
 };
 
-export default News;
+export default News1;

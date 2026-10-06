@@ -1,0 +1,15 @@
+.linkBox {
+  padding-top: 80px;
+
+  display: flex;
+  gap: 8px;
+
+  > a {
+    font-size: 14px;
+    line-height: 150%;
+  }
+}
+
+.active {
+  color: #9a9ca5;
+}

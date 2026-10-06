@@ -7,21 +7,36 @@ import { categories, newsData } from "./category.js";
 const Categories = () => {
   const [category, setCategory] = useState("All News");
 
+  const renderCategor = newsData.filter(
+    (ell) => category === "All News" || ell.category === category,
+  );
+
   return (
     <section>
       <div className="container">
         <h1 className={style.h1_categories}>Categories</h1>
         <div className={style.categoriesBox}>
           {categories.map((cat, id) => (
-            <NavLink className={style.categorBtn} key={id}>
+            <div
+              className={
+                category === cat ? style.linkActive : style.linkNoActive
+              }
+              onClick={() => setCategory(cat)}
+              key={id}
+            >
               {cat}
-            </NavLink>
+            </div>
           ))}
         </div>
 
         <div className={style.blogContainer}>
-          {newsData.map((ell) => (
-            <Link className={style.blogBox} key={ell.id}>
+          {renderCategor.map((ell) => (
+            <Link
+              to={`/News/${ell.id}`}
+              target="blank"
+              className={style.blogBox}
+              key={ell.id}
+            >
               <img src={ell.image} alt={ell.date} />
               <div className={style.infoNewsBox}>
                 <h5>{ell.title}</h5>

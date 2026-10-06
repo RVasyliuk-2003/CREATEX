@@ -13,20 +13,33 @@
 
   display: flex;
   justify-content: space-between;
+
+  > .linkActive,
+  .linkNoActive {
+    max-width: 205px;
+    width: 100%;
+    height: 46px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: white;
+
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 160%;
+    cursor: pointer;
+  }
 }
 
-.categorBtn {
-  max-width: 205px;
-  width: 100%;
-  height: 46px;
+.linkActive {
+  border: 1px solid #ff5a30;
+  color: #ff5a30;
+}
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 160%;
+.linkNoActive {
+  border: none;
   color: #9a9ca5;
 }
 

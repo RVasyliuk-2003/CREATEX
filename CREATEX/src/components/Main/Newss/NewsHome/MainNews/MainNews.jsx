@@ -10,13 +10,13 @@ const MainNews = () => {
       <div className="container">
         <div className={style.linkBox}>
           <NavLink
-            className={({ isActive }) => isActive && style.active}
+            className={({ isActive }) => (isActive ? style.active : undefined)}
             to="/"
           >
             Homepage
           </NavLink>
           <NavLink
-            className={({ isActive }) => isActive && style.active}
+            className={({ isActive }) => (isActive ? style.active : undefined)}
             to="/NewsHome"
           >
             / News

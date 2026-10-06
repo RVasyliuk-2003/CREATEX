@@ -15,6 +15,7 @@ import Work from "./Work/Work/Work";
 
 // News
 import NewsHome from "./Newss/NewsHome/NewsHome";
+import News from "./Newss/Newss/News";
 
 // Contact
 import ContactHome from "./Contact/ContactHome";
@@ -29,12 +30,12 @@ const Main = ({ setRequestMdl }) => {
         {/* // AboutUs */}
         <Route path="/AboutUsHome" element={<AboutUsHome />} />
         <Route path="/about-us" element={<AboutUs />} />
-
         <Route path="/ServicesHome" element={<ServicesHome />} />
         <Route path="/Service" element={<Service />} />
         <Route path="/WorkHome" element={<WorkHome />} />
         <Route path="/Work" element={<Work />} />
         <Route path="/NewsHome" element={<NewsHome />} />
+        <Route path="/News/:id" element={<News />} />
         <Route path="/ContactHome" element={<ContactHome />} />
       </Routes>
     </main>

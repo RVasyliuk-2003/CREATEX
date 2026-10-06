@@ -1,7 +1,7 @@
 import Figures from "./Figuress/Figures";
 import Hero from "./Hero/Hero";
 import HomeVideo from "./HomeVideo/HomeVideo";
-import News from "./Newss/News";
+import News1 from "./Newss/News1";
 import OurServices from "./OurServices/OurServices";
 import OurValues from "./OurValues/OurValues";
 import Partners from "./Partners/Partners";
@@ -22,7 +22,7 @@ const Home = ({ setRequestMdl }) => {
       <OurWork />
       <Partners />
       <Figures />
-      <News />
+      <News1 />
     </>
   );
 };
