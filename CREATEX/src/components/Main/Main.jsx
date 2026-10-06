@@ -16,6 +16,9 @@ import Work from "./Work/Work/Work";
 // News
 import NewsHome from "./Newss/NewsHome/NewsHome";
 
+// Contact
+import ContactHome from "./Contact/ContactHome";
+
 import { Routes, Route } from "react-router-dom";
 
 const Main = ({ setRequestMdl }) => {
@@ -32,6 +35,7 @@ const Main = ({ setRequestMdl }) => {
         <Route path="/WorkHome" element={<WorkHome />} />
         <Route path="/Work" element={<Work />} />
         <Route path="/NewsHome" element={<NewsHome />} />
+        <Route path="/ContactHome" element={<ContactHome />} />
       </Routes>
     </main>
   );
