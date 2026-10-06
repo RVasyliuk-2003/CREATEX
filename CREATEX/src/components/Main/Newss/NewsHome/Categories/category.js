@@ -1,3 +1,10 @@
+import imageNews1 from "./images/news1.jpg";
+import imageNews2 from "./images/news2.jpg";
+import imageNews3 from "./images/news3.jpg";
+import imageNews4 from "./images/news4.jpg";
+import imageNews5 from "./images/news5.jpg";
+import imageNews6 from "./images/news6.jpg";
+
 export const categories = [
   "All News",
   "Company News",
@@ -13,8 +20,7 @@ export const newsData = [
     title: "How to Build Climate Change-Resilient Infrastructure",
     category: "Industry News",
     date: "June 24, 2020",
-    image:
-      "https://images.unsplash.com/photo-1508873696983-2df5057a02b1?auto=format&fit=crop&w=800&q=80",
+    image: imageNews1,
     excerpt:
       "Iaculis diam tincidunt id ante at semper. Urna, pretium, ut vulputate ac egestas egestas ultrices...",
     content: {
@@ -62,8 +68,7 @@ export const newsData = [
     title: "How Construction Tech is Evolving",
     category: "Innovation",
     date: "June 12, 2020",
-    image:
-      "https://images.unsplash.com/photo-1541888946425-d0fbb186a5b3?auto=format&fit=crop&w=800&q=80",
+    image: imageNews2,
     excerpt:
       "Elementum libero hac id diam rhoncus fames. Risus, pretium ut vulputate ac egestas egestas ultrices...",
     content: {
@@ -97,8 +102,7 @@ export const newsData = [
     title: "The Difference Between a Dozer and Excavator",
     category: "Expert Tips",
     date: "May 18, 2020",
-    image:
-      "https://images.unsplash.com/photo-1579412690850-bd41cd0af397?auto=format&fit=crop&w=800&q=80",
+    image: imageNews3,
     excerpt:
       "Ornare egestas ultrices pretium fusce id molestie. Elementum libero hac id diam rhoncus fames...",
     content: {
@@ -139,8 +143,7 @@ export const newsData = [
     title: "Building Construction World Trends",
     category: "Industry News",
     date: "May 5, 2020",
-    image:
-      "https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=800&q=80",
+    image: imageNews4,
     excerpt:
       "Risus, pretium, ut vulputate ac egestas egestas ultrices. Sed imperdiet nisl pretium fusce...",
     content: {
@@ -174,8 +177,7 @@ export const newsData = [
     title: "Top 10 Construction Trends",
     category: "Company News",
     date: "April 29, 2020",
-    image:
-      "https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=800&q=80",
+    image: imageNews5,
     excerpt:
       "Pretium fusce id molestie. Elementum libero hac id diam rhoncus fames. Risus, pretium...",
     content: {
@@ -218,8 +220,7 @@ export const newsData = [
     title: "Types of Flooring Materials",
     category: "Expert Tips",
     date: "April 15, 2020",
-    image:
-      "https://images.unsplash.com/photo-1581858726788-75bc0f6a952d?auto=format&fit=crop&w=800&q=80",
+    image: imageNews6,
     excerpt:
       "Sed imperdiet nisl pretium fusce id molestie. Elementum libero hac id diam rhoncus fames...",
     content: {
