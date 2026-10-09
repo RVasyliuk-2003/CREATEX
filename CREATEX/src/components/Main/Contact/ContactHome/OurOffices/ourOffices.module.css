@@ -1,0 +1,92 @@
+.bgSection {
+  background-color: #f4f5f6;
+
+  padding-bottom: 120px;
+}
+
+.h2 {
+  padding-top: 120px;
+
+  font-size: 46px;
+  font-weight: 700;
+  line-height: 130%;
+  color: #1e212c;
+  text-align: center;
+}
+
+.p_main {
+  margin-top: 24px;
+
+  font-size: 18px;
+  line-height: 150%;
+  color: #787a80;
+  text-align: center;
+}
+
+.rowBox {
+  margin-top: 60px;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.box {
+  max-width: 250px;
+  width: 100%;
+
+  > h6 {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 150%;
+    color: #1e212c;
+  }
+}
+
+.adres {
+  margin-top: 24px;
+
+  > p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 160%;
+    color: #1e212c;
+  }
+
+  > a {
+    margin-top: 4px;
+
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 160%;
+    color: #ff5a30;
+    text-decoration: underline;
+  }
+}
+
+.contactBox {
+  margin-top: 20px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.mesage {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+
+  > span {
+    color: #787a80;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 160%;
+  }
+
+  > a {
+    color: #1e212c;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 160%;
+  }
+}
