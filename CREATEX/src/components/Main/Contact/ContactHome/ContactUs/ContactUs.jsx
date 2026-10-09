@@ -6,7 +6,7 @@ const ContactUs = () => {
   return (
     <section>
       <div className="container">
-        <h1 className={style.h1}>Contact us</h1>
+        <h2 className={style.h2}>Contact us</h2>
         <p className={style.p_main}>
           Please complete the form. Detailed information will help us to make a
           tuned offer.
