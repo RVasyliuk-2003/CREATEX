@@ -8,8 +8,8 @@ const ContactHome = () => {
     <>
       <ContactPage />
       <ContactUs />
-      <FindUsAt />
       <OurOffices />
+      <FindUsAt />
     </>
   );
 };

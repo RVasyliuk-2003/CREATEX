@@ -1,0 +1,29 @@
+.bgSection {
+  background-color: #f4f5f6;
+
+  padding-bottom: 120px;
+}
+
+.h2 {
+  font-size: 46px;
+  font-weight: 700;
+  line-height: 130%;
+  color: #1e212c;
+  text-align: center;
+}
+
+.messangeContainer {
+  max-width: 260px;
+  width: 100%;
+
+  margin: 40px auto 0px auto;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  > img {
+    width: 32px;
+    height: 32px;
+  }
+}
