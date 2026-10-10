@@ -1,5 +1,6 @@
 import style from "./howNews.module.css";
 import { NavLink, useParams } from "react-router-dom";
+import { useState } from "react";
 
 import { newsData } from "../../NewsHome/Categories/category.js";
 
@@ -14,25 +15,75 @@ const HowNews = () => {
 
   const currentNews = newsData.find((ell) => ell.id === Number(id));
 
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [comment, setComment] = useState("");
+  const [error, setError] = useState("");
+
+  const isEmailValid = /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$/.test(email);
+  const today = new Date();
+  const newId = Date.now();
+
+  const resultForm = (e) => {
+    e.preventDefault();
+
+    if (!name.trim() || !emailname.trim() || !commentname.trim()) {
+      setError("Please fill in all required fields");
+      return;
+    }
+    if (!name.trim()) {
+      setError("Please enter your name");
+      return;
+    }
+    if (!isEmailValid) {
+      setError("Please enter a valid email address containing '@'і");
+      return;
+    } else {
+      const newComment = {
+        id: newId,
+        author: name,
+        date: new Date().toLocaleDateString("en-US", {
+          month: "long",
+          day: "numeric",
+          year: "numeric",
+        }),
+        text: comment,
+      };
+
+      currentNews.comments.push(newComment);
+
+      setName("");
+      setEmail("");
+      setComment("");
+      setError("");
+    }
+  };
+
   return (
     <section>
       <div className={style.bacgroundColor}>
         <div className="container">
           <div className={style.linkBox}>
             <NavLink
-              className={({ isActive }) => isActive && style.active}
+              className={({ isActive }) =>
+                isActive ? style.active : undefined
+              }
               to="/"
             >
               Homepage
             </NavLink>
             <NavLink
-              className={({ isActive }) => isActive && style.active}
+              className={({ isActive }) =>
+                isActive ? style.active : undefined
+              }
               to="/NewsHome"
             >
               / News
             </NavLink>
             <NavLink
-              className={({ isActive }) => isActive && style.active}
+              className={({ isActive }) =>
+                isActive ? style.active : undefined
+              }
               to="/News"
             >
               / {currentNews?.title}
@@ -120,21 +171,42 @@ const HowNews = () => {
           <div className={style.row}>
             <label className={style.field}>
               <span>Name*</span>
-              <input type="text" placeholder="Your name" />
+              <input
+                type="text"
+                placeholder="Your name"
+                value={name}
+                onChange={(e) => setName(e.target.value)}
+              />
             </label>
 
             <label className={style.field}>
               <span>Email*</span>
-              <input type="email" placeholder="Your working email" />
+              <input
+                type="email"
+                placeholder="Your working email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+              />
             </label>
           </div>
 
           <label className={style.field}>
             <span>Your comment*</span>
-            <textarea placeholder="Type comment here" rows={4}></textarea>
+            <textarea
+              placeholder="Type comment here"
+              rows={4}
+              value={comment}
+              onChange={(e) => setComment(e.target.value)}
+            ></textarea>
           </label>
 
-          <button type="submit" className={style.submitBtn}>
+          {error && <p className={style.error}>{error}</p>}
+
+          <button
+            type="submit"
+            className={style.submitBtn}
+            onClick={(e) => resultForm(e)}
+          >
             POST COMMENT
           </button>
         </form>
