@@ -131,3 +131,11 @@ select {
     color: #424551;
   }
 }
+
+.error {
+  margin-top: 20px;
+  color: rgb(214, 0, 0);
+  line-height: 160%;
+  font-weight: 700;
+  font-size: 20px;
+}
