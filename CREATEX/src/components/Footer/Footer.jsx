@@ -22,6 +22,8 @@ const Footer = () => {
   );
 
   const resultEmaiForm = (e) => {
+    e.preventDefault();
+
     if (!isEmailValid) {
       setError("Please enter a valid email address containing '@'");
       return;
