@@ -1,7 +1,7 @@
 .bacgroundColor {
   background-color: #f4f5f6;
 
-  height: 600px;
+  height: 480px;
 }
 
 .linkBox {
@@ -70,7 +70,7 @@
   border-radius: 4px;
 
   position: absolute;
-  top: 62%;
+  top: 56%;
   left: 50%;
   transform: translate(-50%, -50%);
 }

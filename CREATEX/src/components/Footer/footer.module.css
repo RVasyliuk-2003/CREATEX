@@ -156,7 +156,7 @@
   align-items: end;
   gap: 16px;
 
-  > a {
+  > p {
     color: #ffffff;
     font-size: 14px;
   }

@@ -12,6 +12,13 @@ import Line from "././images/Line.svg";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
   return (
     <div className={style.mainBoxFtr}>
       <footer className="container">
@@ -104,9 +111,9 @@ const Footer = () => {
           </a>
 
           <div className={style.goToTopBox}>
-            <Link to="/">GO TO TOP</Link>
+            <p>GO TO TOP</p>
             <button>
-              <img src={Line} alt="Line" />
+              <img src={Line} alt="Line" onClick={() => scrollToTop()} />
             </button>
           </div>
         </div>
