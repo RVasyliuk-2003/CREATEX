@@ -1,4 +1,6 @@
 import style from "./footer.module.css";
+import { useState } from "react";
+
 import Whatsapp from "././images/Whatsapp.svg";
 import Messanger from "././images/Messanger.svg";
 import Facebook from "././images/Facebook.svg";
@@ -12,6 +14,23 @@ import Line from "././images/Line.svg";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
+  const [email, setEmail] = useState("");
+  const [error, setError] = useState("");
+
+  const isEmailValid = /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$/.test(
+    email.trim(),
+  );
+
+  const resultEmaiForm = (e) => {
+    if (!isEmailValid) {
+      setError("Please enter a valid email address containing '@'");
+      return;
+    } else {
+      setError("");
+      setEmail("");
+    }
+  };
+
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
@@ -60,9 +79,15 @@ const Footer = () => {
           <div className={style.inputMailContainer}>
             <h5>Let’s stay in touch</h5>
             <div className={style.containerbtnInput}>
-              <button>SUBSCRIBE</button>
-              <input type="email" placeholder="Your email address " />
+              <button onClick={(e) => resultEmaiForm(e)}>SUBSCRIBE</button>
+              <input
+                type="email"
+                placeholder="Your email address"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+              />
             </div>
+            {error && <span className={style.errorColor}>{error}</span>}
             <p>
               *Subscribe to our newsletter to receive communications and early
               updates from Createx <br /> Construction Bureau.
