@@ -1,6 +1,6 @@
 import style from "./header.module.css";
 
-import { Link } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 
 import logo from "./images/logo.svg";
 import chat from "./images/Chat.svg";
@@ -16,19 +16,54 @@ const Header = () => {
 
         <ul>
           <li>
-            <Link to="/AboutUsHome">About Us</Link>
+            <NavLink
+              style={({ isActive }) => ({
+                color: isActive ? "#424551" : "#8c91ab",
+              })}
+              to="/AboutUsHome"
+            >
+              About Us
+            </NavLink>
           </li>
           <li>
-            <Link to="/ServicesHome">Services</Link>
+            <NavLink
+              style={({ isActive }) => ({
+                color: isActive ? "#424551" : "#8c91ab",
+              })}
+              to="/ServicesHome"
+            >
+              Services
+            </NavLink>
           </li>
           <li>
-            <Link to="/WorkHome">Work</Link>
+            <NavLink
+              style={({ isActive }) => ({
+                color: isActive ? "#424551" : "#8c91ab",
+              })}
+              to="/WorkHome"
+            >
+              Work
+            </NavLink>
           </li>
           <li>
-            <Link to="/NewsHome"> News</Link>
+            <NavLink
+              style={({ isActive }) => ({
+                color: isActive ? "#424551" : "#8c91ab",
+              })}
+              to="/NewsHome"
+            >
+              News
+            </NavLink>
           </li>
           <li>
-            <Link to="/ContactHome"> Contacts</Link>
+            <NavLink
+              style={({ isActive }) => ({
+                color: isActive ? "#424551" : "#8c91ab",
+              })}
+              to="/ContactHome"
+            >
+              Contacts
+            </NavLink>
           </li>
         </ul>
         <div className={style.contactHead}>

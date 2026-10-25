@@ -97,7 +97,7 @@ const HowNews = () => {
               {currentNews.category} | {currentNews.date} |{" "}
               {currentNews.comments.length > 0
                 ? currentNews.comments.length
-                : "No comments"}
+                : "No comments"}{" "}
               comments
             </p>
 

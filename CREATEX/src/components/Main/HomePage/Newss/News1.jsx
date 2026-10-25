@@ -4,9 +4,11 @@ import img1 from "./images/img1.jpg";
 import img2 from "./images/img2.jpg";
 import img3 from "./images/img3.jpg";
 
+import { Link } from "react-router-dom";
+
 const News1 = () => {
   return (
-    <section >
+    <section>
       <div className="container">
         <div className={style.newsMainContainer}>
           <h2>Recent news</h2>
@@ -40,7 +42,7 @@ const News1 = () => {
           </div>
           <div className={style.viewPostBox}>
             <h5>Explore all our news posts</h5>
-            <button>VIEW ALL NEWS</button>
+            <Link to="/NewsHome">VIEW ALL NEWS</Link>
           </div>
         </div>
       </div>

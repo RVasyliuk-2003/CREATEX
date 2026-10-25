@@ -7,6 +7,8 @@ import image5 from "./images/image5.jfif";
 import image6 from "./images/image6.jfif";
 import image7 from "./images/image7.jfif";
 
+import { Link } from "react-router-dom";
+
 import Left from "./images/Line.svg";
 import Right from "./images/Line2.svg";
 
@@ -69,7 +71,9 @@ const OurProjects = () => {
                   <p>Apartments & flats</p>
                 </div>
                 {hoveredIndex === 1 && (
-                  <button className={style.hoverBtnSlide}>VIEW PROJECT</button>
+                  <Link to="/WorkHome" className={style.hoverBtnSlide}>
+                    VIEW PORTFOLIO
+                  </Link>
                 )}
               </div>
             </SwiperSlide>
@@ -86,7 +90,9 @@ const OurProjects = () => {
                   <p>Apartments & flats</p>
                 </div>
                 {hoveredIndex === 2 && (
-                  <button className={style.hoverBtnSlide}>VIEW PROJECT</button>
+                  <Link to="/WorkHome" className={style.hoverBtnSlide}>
+                    VIEW PORTFOLIO
+                  </Link>
                 )}
               </div>
             </SwiperSlide>
@@ -103,7 +109,9 @@ const OurProjects = () => {
                   <p>Private houses</p>
                 </div>
                 {hoveredIndex === 3 && (
-                  <button className={style.hoverBtnSlide}>VIEW PROJECT</button>
+                  <Link to="/WorkHome" className={style.hoverBtnSlide}>
+                    VIEW PORTFOLIO
+                  </Link>
                 )}
               </div>
             </SwiperSlide>
@@ -119,7 +127,9 @@ const OurProjects = () => {
                   <p>Apartments & flats</p>
                 </div>
                 {hoveredIndex === 4 && (
-                  <button className={style.hoverBtnSlide}>VIEW PROJECT</button>
+                  <Link to="/WorkHome" className={style.hoverBtnSlide}>
+                    VIEW PORTFOLIO
+                  </Link>
                 )}
               </div>
             </SwiperSlide>
@@ -135,7 +145,9 @@ const OurProjects = () => {
                   <p>Private houses</p>
                 </div>
                 {hoveredIndex === 5 && (
-                  <button className={style.hoverBtnSlide}>VIEW PROJECT</button>
+                  <Link to="/WorkHome" className={style.hoverBtnSlide}>
+                    VIEW PORTFOLIO
+                  </Link>
                 )}
               </div>
             </SwiperSlide>
@@ -151,7 +163,9 @@ const OurProjects = () => {
                   <p>Apartments & flats</p>
                 </div>
                 {hoveredIndex === 6 && (
-                  <button className={style.hoverBtnSlide}>VIEW PROJECT</button>
+                  <Link to="/WorkHome" className={style.hoverBtnSlide}>
+                    VIEW PORTFOLIO
+                  </Link>
                 )}
               </div>
             </SwiperSlide>
@@ -167,14 +181,18 @@ const OurProjects = () => {
                   <p>Apartments & flats</p>
                 </div>
                 {hoveredIndex === 7 && (
-                  <button className={style.hoverBtnSlide}>VIEW PROJECT</button>
+                  <Link to="/WorkHome" className={style.hoverBtnSlide}>
+                    VIEW PORTFOLIO
+                  </Link>
                 )}
               </div>
             </SwiperSlide>
           </Swiper>
           <div className={style.btnPortfolio}>
             <p>Explore all our works</p>
-            <button>VIEW PORTFOLIO</button>
+            <Link to="/WorkHome" className={style.hoverBtnSlide}>
+              VIEW PORTFOLIO
+            </Link>
           </div>
         </div>
       </div>

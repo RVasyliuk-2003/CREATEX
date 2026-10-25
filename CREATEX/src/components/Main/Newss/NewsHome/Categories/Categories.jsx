@@ -45,7 +45,7 @@ const Categories = () => {
                   {ell.category} | {ell.date} |{" "}
                   {ell.comments.length > 0
                     ? ell.comments.length
-                    : "No comments"}
+                    : "No comments"}{" "}
                   comments
                 </p>
                 <p className={style.p_excerpt}>{ell.excerpt}</p>

@@ -3,7 +3,9 @@ import style from "./hero.module.css";
 import line from "./images/Line.svg";
 import line2 from "./images/Line2.svg";
 
-import RequestModal from "../../RequestForm/RequestModal";
+import { Link } from "react-router-dom";
+
+// import RequestModal from "../../RequestForm/RequestModal";
 
 const Hero = ({ setRequestMdl }) => {
   return (
@@ -28,7 +30,9 @@ const Hero = ({ setRequestMdl }) => {
             turpis purus eget pellentesque integer ipsum elementum felis.
           </p>
           <div className={style.btnBox}>
-            <button className={style.btnLEARN}>LEARN MORE ABOUT US</button>
+            <Link to="/AboutUsHome" className={style.btnLEARN}>
+              LEARN MORE ABOUT US
+            </Link>
             <button
               onClick={() => setRequestMdl(true)}
               className={style.btnSUBMIT}

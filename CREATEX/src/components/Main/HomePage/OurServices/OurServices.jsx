@@ -5,6 +5,8 @@ import painting from "./images/ic-painting.svg";
 import pantone from "./images/ic-pantone.svg";
 import plan from "./images/ic-plan.svg";
 
+import { Link } from "react-router-dom";
+
 const OurServices = () => {
   return (
     <section className={`containerForImgBacground ${style.imgUrl}`}>
@@ -35,7 +37,9 @@ const OurServices = () => {
           </div>
           <div className={style.btnServiBox}>
             <p>Learn more about our services</p>
-            <button>VIEW SERVICES</button>
+            <Link to="/ServicesHome" className={style.btnVIEW}>
+              VIEW SERVICES
+            </Link>
           </div>
         </div>
       </div>

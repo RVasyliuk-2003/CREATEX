@@ -20,6 +20,9 @@
     color: white;
 
     > span {
+      font-size: 72px;
+      font-weight: 700;
+      line-height: 130%;
       color: #ff5a30;
     }
   }
@@ -48,9 +51,15 @@
 }
 
 .btnLEARN {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   max-width: 278px;
+  width: 100%;
   background: none;
   border: 1px solid white;
+  color: white;
+  font-weight: 700;
 }
 
 .btnSUBMIT {
@@ -106,5 +115,9 @@
     border-radius: 50%;
     border: none;
     background-color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
