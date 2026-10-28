@@ -1,3 +1,4 @@
+import { useState } from "react";
 import style from "./hero.module.css";
 
 import line from "./images/Line.svg";
@@ -5,32 +6,42 @@ import line2 from "./images/Line2.svg";
 
 import { Link } from "react-router-dom";
 
-// import RequestModal from "../../RequestForm/RequestModal";
+import { slidesData } from "./slidesData";
 
 const Hero = ({ setRequestMdl }) => {
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  const handlePrev = () => {
+    setCurrentIndex((prev) => (prev === 0 ? slidesData.length - 1 : prev - 1));
+  };
+
+  const handleNext = () => {
+    setCurrentIndex((prev) => (prev === slidesData.length - 1 ? 0 : prev + 1));
+  };
+
+  const currentSlide = slidesData[currentIndex];
+
   return (
-    <section className={`containerForImgBacground ${style.heroBg}`}>
+    <section
+      className={`containerForImgBacground ${style.heroBg} ${currentIndex !== 0 ? style.darkOverlay : ""}`}
+      style={{ backgroundImage: `url(${currentSlide.bgImage})` }}
+    >
       <div className={style.LineBtnForSlider}>
-        <button>
+        <button onClick={handlePrev} aria-label="Previous slide">
           <img src={line} alt="line" />
         </button>
-        <button>
+        <button onClick={handleNext} aria-label="Next slide">
           <img src={line2} alt="line2" />
         </button>
       </div>
 
       <div className="container">
         <div className={style.mainContainer}>
-          <h1>
-            CREATE<span>X</span> <br /> CONSTRUCTION
-          </h1>
-          <p>
-            Cras ultrices leo vitae non viverra. Fringilla nisi quisque <br />
-            consequat, dignissim vitae proin ipsum sed. Pellentesque nec <br />{" "}
-            turpis purus eget pellentesque integer ipsum elementum felis.
-          </p>
+          <h1>{currentSlide.title}</h1>
+          <p>{currentSlide.description}</p>
+
           <div className={style.btnBox}>
-            <Link to="/AboutUsHome" className={style.btnLEARN}>
+            <Link className={style.btnLEARN} to="/AboutUsHome">
               LEARN MORE ABOUT US
             </Link>
             <button
@@ -42,18 +53,17 @@ const Hero = ({ setRequestMdl }) => {
           </div>
 
           <div className={style.switchContainer}>
-            <div className={style.switch}>
-              <p>01</p>
-            </div>
-            <div className={style.switch}>
-              <p>02</p>
-            </div>
-            <div className={style.switch}>
-              <p>03</p>
-            </div>
-            <div className={style.switch}>
-              <p>04</p>
-            </div>
+            {slidesData.map((slide, index) => (
+              <div
+                key={slide.id}
+                className={`${style.switch} ${
+                  index === currentIndex ? style.activeSwitch : ""
+                }`}
+                onClick={() => setCurrentIndex(index)}
+              >
+                <p>{slide.id}</p>
+              </div>
+            ))}
           </div>
         </div>
       </div>
